@@ -5,6 +5,7 @@ JavaScript.
 Crea un progetto composto da file html, css e js (fai attenzione alla giusta creazione delle cartelle).
 Requisiti:
 </br>
+<hr>
 • All'avvio l'applicazione deve presentare un tag input per poter inserire il nome del nuovo task
 </br>
 • Un bottone a fianco del tag input aggiungerà il testo inserito alla lista dei task sottostante
