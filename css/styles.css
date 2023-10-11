@@ -62,6 +62,8 @@ header button {
   background: #eee;
   margin-left: -40px;
   user-select: none;
+  border-radius: 25px;
+  max-width: fit-content;
 }
 .grayed {
   background-color: #cfcfc4;
