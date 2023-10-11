@@ -7,6 +7,7 @@ window.onload = () => {
     const inputValue = inputLoc.value;
     const checked = function (e) {
       e.target.classList.toggle("strikethrough");
+      e.target.parentNode.classList.toggle("grayed");
     };
 
     if (inputValue != "") {
@@ -22,7 +23,6 @@ window.onload = () => {
       newX.className = "close";
 
       newLi.appendChild(newX);
-
       ul.appendChild(newLi);
 
       newX.onclick = function (e) {

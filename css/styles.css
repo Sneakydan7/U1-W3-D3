@@ -65,7 +65,9 @@ header button {
   margin-left: -40px;
   user-select: none;
 }
-
+.grayed {
+  background-color: #cfcfc4;
+}
 /* x button */
 
 .close {
