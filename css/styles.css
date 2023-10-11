@@ -26,7 +26,8 @@ header {
   border-bottom: 2px solid black;
 }
 header h1 {
-  text-shadow: 2px 3px 12px rgba(0, 0, 0, 0.7);
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
   font-weight: 100;
   font-size: 3rem;
 }
@@ -39,34 +40,45 @@ header input {
   padding: 10px;
   float: left;
   font-size: 16px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 header button {
   border: none;
   width: 150px;
   border-radius: 25px;
   cursor: pointer;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+/* list */
+
+#toDoList {
+  margin-top: 25px;
+}
+.newLi {
+  cursor: pointer;
+  border: 1px solid gray;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  margin-left: -10px;
+  margin-top: 5px;
+  user-select: none;
+  border-radius: 25px;
+  max-width: fit-content;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.grayed {
+  background-color: #cfcfc4;
 }
 
 .strikethrough {
   color: gray;
   text-decoration: line-through;
-}
-
-/* list */
-
-.newLi {
-  cursor: pointer;
-  border-bottom: 1px solid gray;
-  padding: 12px 8px 12px 40px;
-  list-style-type: none;
-  background: #eee;
-  margin-left: -40px;
-  user-select: none;
-  border-radius: 25px;
-  max-width: fit-content;
-}
-.grayed {
-  background-color: #cfcfc4;
 }
 /* x button */
 
