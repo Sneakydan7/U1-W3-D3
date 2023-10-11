@@ -11,7 +11,7 @@ window.onload = () => {
       newLi.classList = "newLi";
 
       const newX = document.createElement("span");
-      newX.innerText = "X";
+      newX.innerText = "❌";
       newX.className = "close";
 
       newLi.appendChild(newX);
