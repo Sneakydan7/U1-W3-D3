@@ -7,7 +7,7 @@ window.onload = () => {
   const audio = new Audio("./css/assets/ducky.mp3");
   audio.playbackRate = 1.5;
   doodleLogo.addEventListener("click", () => {
-    audio.play();
+    audio.cloneNode(true).play();
   });
 
   submitButton.onclick = function () {
