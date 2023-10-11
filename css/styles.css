@@ -43,12 +43,10 @@ header input {
 header button {
   border: none;
   width: 150px;
-  margin: -32;
-  padding-bottom: 20px;
-  padding-top: 3px;
-  text-align: center;
-  border-radius: 5px;
+  border-radius: 25px;
+  cursor: pointer;
 }
+
 .strikethrough {
   color: gray;
   text-decoration: line-through;
