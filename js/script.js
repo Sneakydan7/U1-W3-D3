@@ -3,6 +3,13 @@ window.onload = () => {
   const inputLoc = document.getElementById("inputBox");
   const ul = document.getElementById("toDoList");
 
+  const doodleLogo = document.querySelector("h1");
+  const audio = new Audio("./css/assets/ducky.mp3");
+  audio.playbackRate = 1.5;
+  doodleLogo.addEventListener("click", () => {
+    audio.play();
+  });
+
   submitButton.onclick = function () {
     const inputValue = inputLoc.value;
     const checked = function (e) {
