@@ -5,28 +5,29 @@ window.onload = () => {
 
   submitButton.onclick = function () {
     const inputValue = inputLoc.value;
+    if (inputValue != "") {
+      const newLi = document.createElement("li");
+      newLi.innerText = inputValue;
+      newLi.classList = "newLi";
 
-    const newLi = document.createElement("li");
-    newLi.innerText = inputValue;
-    newLi.classList = "newLi";
+      const newX = document.createElement("span");
+      newX.innerText = "X";
+      newX.className = "close";
 
-    const newX = document.createElement("span");
-    newX.innerText = "X";
-    newX.className = "close";
+      newLi.appendChild(newX);
 
-    newLi.appendChild(newX);
+      ul.appendChild(newLi);
 
-    ul.appendChild(newLi);
+      newX.onclick = function (e) {
+        const toRemove = e.target;
+        toRemove.parentNode.remove();
+      };
+      const list = document.querySelector("ul");
 
-    newX.onclick = function (e) {
-      const toRemove = e.target;
-      toRemove.parentNode.remove();
-    };
-    const list = document.querySelector("ul");
-
-    const checked = function (e) {
-      e.target.classList.toggle("strikethrough");
-    };
-    list.addEventListener("click", checked);
+      const checked = function (e) {
+        e.target.classList.toggle("strikethrough");
+      };
+      list.addEventListener("click", checked);
+    }
   };
 };
