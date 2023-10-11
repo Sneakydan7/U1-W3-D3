@@ -57,6 +57,7 @@ header button {
   list-style-type: none;
   background: #eee;
   margin-left: -40px;
+  user-select: none;
 }
 
 /* x button */
