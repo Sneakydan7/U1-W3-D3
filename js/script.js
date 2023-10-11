@@ -5,11 +5,18 @@ window.onload = () => {
 
   submitButton.onclick = function () {
     const inputValue = inputLoc.value;
+    const checked = function (e) {
+      e.target.classList.toggle("strikethrough");
+    };
+
     if (inputValue != "") {
       const newLi = document.createElement("li");
-      newLi.innerText = inputValue;
       newLi.classList = "newLi";
+      const liSpan = document.createElement("span");
+      liSpan.innerText = inputValue;
+      liSpan.addEventListener("click", checked);
 
+      newLi.appendChild(liSpan);
       const newX = document.createElement("span");
       newX.innerText = "❌";
       newX.className = "close";
@@ -23,11 +30,7 @@ window.onload = () => {
         toRemove.parentNode.remove();
       };
       const list = document.querySelector("ul");
-
-      const checked = function (e) {
-        e.target.classList.toggle("strikethrough");
-      };
-      list.addEventListener("click", checked);
+      console.log("LIST", list);
     }
   };
 };
