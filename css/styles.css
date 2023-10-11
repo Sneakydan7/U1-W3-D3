@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  margin: 0;
+}
+/* HEADER */
+
+header {
+  text-align: center;
+  background-image: url(./assets/lukas-blazek-EWDvHNNfUmQ-unsplash.jpg);
+  border-bottom: 10px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  margin-bottom: -16px;
+}
+
+header input {
+  margin-left: 25px;
+  border: none;
+  border-radius: 5px;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+header button {
+  border: none;
+  width: 150px;
+  margin: -32;
+  padding-bottom: 20px;
+  padding-top: 3px;
+  text-align: center;
+  border-radius: 5px;
+}
+.strikethrough {
+  color: gray;
+  text-decoration: line-through;
+}
+
+/* list */
+
+.newLi {
+  cursor: pointer;
+  border-bottom: 1px solid gray;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  margin-left: -40px;
+}
+
+/* x button */
+
+.close {
+  margin-left: 5px;
+}
