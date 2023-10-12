@@ -8,11 +8,11 @@ Crea un progetto composto da file html, css e js (fai attenzione alla giusta cre
 
 
 
- - [ ] All'avvio l'applicazione deve presentare un tag input per poter inserire il nome del nuovo task
+ - [x] All'avvio l'applicazione deve presentare un tag input per poter inserire il nome del nuovo task
 
- - [ ] Un bottone a fianco del tag input aggiungerà il testo inserito alla lista dei task sottostante
+ - [x] Un bottone a fianco del tag input aggiungerà il testo inserito alla lista dei task sottostante
 
- - [ ] Ogni task nella lista deve poter reagire al click del mouse, che lo segnerà come "completato" (un task completato si differenzia per il testo attraversato da una linea orizzontale)
- - [ ] Ogni task nella lista deve poter essere eliminato individualmente tramite un bottone dedicato
+ - [x] Ogni task nella lista deve poter reagire al click del mouse, che lo segnerà come "completato" (un task completato si differenzia per il testo attraversato da una linea orizzontale)
+ - [x] Ogni task nella lista deve poter essere eliminato individualmente tramite un bottone dedicato
 
- - [ ] Cerca di rendere l'applicazione accattivante nello stile e piacevole da utilizzare per l'uten
+ - [x] Cerca di rendere l'applicazione accattivante nello stile e piacevole da utilizzare per l'utente!
